@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="icon" type="image/svg+xnl" href="images/icon.svg">
+</head>
+<body>
+	<header class="bg-orange-50 px-16 shadow">
+	    <div class="mx-auto flex items-center justify-between py-2">
+	    	<a href="index.html" class="flex items-center">
+	            <img src="images/logo.svg" alt="Sweet Puff Logo" class="h-12 w-auto">
+	        </a>
+	        <input type="checkbox" id="menu-toggle" class="peer hidden">
+	        <label for="menu-toggle" class="sm:hidden cursor-pointer text-yellow-900 text-3xl">
+	            ☰
+	        </label>
+	        <nav class="hidden peer-checked:block absolute top-16 left-0 w-full bg-orange-50 sm:static sm:block sm:w-auto">
+	            <ul class="flex flex-col items-center gap-y-4 py-4 sm:flex-row sm:gap-x-8 sm:py-0">
+	                <li><a href="index.html" class="text-yellow-900 hover:text-yellow-600">Home</a></li>
+	                <li><a href="menu.html" class="text-yellow-600">Menu</a></li>
+	                <li><a href="about.html" class="text-yellow-900 hover:text-yellow-600">About</a></li>
+	            </ul>
+	        </nav>
+	    </div>
+	</header>
+
+	<div class="bg-yellow-900 pb-16">
+	    <div class="max-w-6xl mx-auto px-4 py-12">
+	        <p id="all" class="text-white mb-8 text-center mt-4 text-4xl sm:text-5xl md:text-6xl font-medium font-serif italic">Our Sweetness Selection</p>
+	        <div class="flex justify-center space-x-4 mb-16">
+			    <a href="menu.html#all" class="bg-white text-yellow-900 py-3 px-6 rounded-lg text-xl hover:bg-orange-50">All</a>
+			    <a href="menu.html#cookies" class="bg-white text-yellow-900 py-3 px-6 rounded-lg text-xl hover:bg-orange-50">Cookies</a>
+			    <a href="menu.html#puffs" class="bg-white text-yellow-900 py-3 px-6 rounded-lg text-xl hover:bg-orange-50">Puffs</a>
+			    <a href="menu.html#drinks" class="bg-white text-yellow-900 py-3 px-6 rounded-lg text-xl hover:bg-orange-50">Drinks</a>
+			</div>
+
+	        <p id="cookies" class="text-4xl font-serif text-white font-bold text-center mb-8">— Cookies —</p>
+	        <div class="grid md:grid-cols-3 gap-8">
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/cm1.png" alt="White Dream" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A creamy blend of white chocolate and macadamia nuts</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">White Dream</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱75</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/cm2.png" alt="Red Velvet" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Soft red velvet pastry with a hint of cocoa flavor</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Red Velvet</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱75</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/cm3.png" alt="Choco Classic" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A chewy treat loaded with gooey chocolate chunks</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Choco Classic</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱70</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="max-w-6xl mx-auto px-4 py-12">
+	        <p id="puffs" class="text-4xl font-serif text-white font-bold text-center mb-8">— Puffs —</p>
+	        <div class="grid md:grid-cols-3 gap-8">
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/pm1.png" alt="Raspberry Turnover" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A crispy crust filled with sweet raspberry jam</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Raspberry Turnover</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱85</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/pm2.png" alt="Hazelnut Swirl" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Puff pastry rolled with a rich hazelnut spread</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Hazelnut Swirl</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱80</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/pm3.png" alt="Cream Puff" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Delicate choux pastry filled with smooth vanilla cream</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Cream Puff</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱65</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/pm4.png" alt="Strawberry Danish" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A light pastry with fruity jam and creamy cheese</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Strawberry Danish</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱85</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/pm5.png" alt="Chocolate Croissant" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Flaky croissant filled with smooth, dark chocolate</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Chocolate Croissant</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱80</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/pm6.png" alt="Butter Croissant" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white"> A golden, flaky pastry with a rich buttery flavor</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Butter Croissant</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱70</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="max-w-6xl mx-auto px-4 py-12">
+	        <p id="drinks" class="text-4xl font-serif text-white font-bold text-center mb-8">— Drinks —</p>
+	        <div class="grid md:grid-cols-3 gap-8">
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/d1.png" alt="Café Latte" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A smooth blend of espresso and steamed milk</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Café Latte</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱120</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/d2.png" alt="Caramel Cappuccino" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Frothy cappuccino with a sweet caramel twist</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Caramel Cappuccino</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱130</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/d3.png" alt="Hot Chocolate" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Velvety chocolate drink, rich and comforting</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Hot Chocolate</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱110</p>
+	                </div>
+	            </div>
+				<div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/d4.png" alt="Iced Vanilla Latte" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A refreshing, lightly sweet espresso drink</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Iced Vanilla Latte</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱125</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/d5.png" alt="Strawberry Fizz" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">A fizzy, fruity burst of refreshing strawberry flavor</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Strawberry Fizz</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱135</p>
+	                </div>
+	            </div>
+	            <div class="relative group">
+	                <div class="bg-white shadow-lg rounded-2xl p-6 border border-cyan-100 hover:shadow-2xl hover:scale-105 transition duration-300">
+	                    <div class="relative overflow-hidden">
+	                        <img src="images/d6.png" alt="Iced Matcha Latte" class="mx-auto mb-2 w-48 sm:w-64">
+	                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition duration-300"></div>
+	                        <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+	                            <p class="text-ll text-center text-white">Chilled matcha latte with a creamy, earthy taste</p>
+	                        </div>
+	                    </div>
+	                    <p class="text-center text-2xl font-serif italic text-yellow-900">Iced Matcha Latte</p>
+	                    <p class="text-center text-2xl text-yellow-900 mb-2">₱135</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<footer class="bg-orange-50 text-yellow-700 py-6">
+	    <div class="max-w-6xl mx-auto px-4">
+	        <div class="text-center mb-6">
+	            <p class="text-3xl font-semibold font-serif italic text-yellow-700">Sweet Puff<p>
+	        </div>
+	        <div class="my-4 border-t-2 border-yellow-600"></div>
+	        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+	            <div>
+	                <p class="font-semibold font-serif text-yellow-900">Location</p>
+	                <p class="text-md text-yellow-700">Imus, Cavite</p>
+	                <p class="text-md text-yellow-700">Philippines</p>
+	            </div>
+	            <div>
+	                <p class="font-semibold font-serif text-yellow-900">Contact Us</p>
+	                <p class="text-md text-yellow-700">Facebook: Sweet Puff</p>
+	                <p class="text-md text-yellow-700">Phone: 09065117728</p>
+	            </div>
+	            <div>
+	                <p class="font-semibold font-serif text-yellow-900">Open Hours</p>
+	                <p class="text-md text-yellow-700">1:00 PM – 10:00 PM</p>
+ 	                <p class="text-md text-yellow-700">Everyday</p>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+</body>
+</html>
